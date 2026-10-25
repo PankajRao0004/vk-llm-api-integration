@@ -1,0 +1,11 @@
+.venv/
+__pycache__/
+*.py[cod]
+.env
+.pytest_cache/
+
+# .venv/	Contains our environment and installed packages, which can be recreated
+# __pycache__/	Contains Python-generated cache files
+# *.py[cod]	Excludes generated Python bytecode files
+# .env	Protects our local configuration and API key
+# .pytest_cache/	Contains temporary data created by our tests
