@@ -126,6 +126,35 @@ Open the interactive API documentation:
 
 http://127.0.0.1:8000/docs
 
+
+## Interactive CLI
+
+The project includes a simple command-line interface for chatting
+with the backend without manually sending JSON requests.
+
+### Run the CLI
+
+Start the FastAPI backend in one terminal:
+
+```powershell
+python -m uvicorn app:app --reload
+```
+
+Open a second terminal in the project folder and run:
+
+```powershell
+python chat_cli.py
+```
+
+Type a message at the `You:` prompt. The CLI automatically reuses
+the conversation ID returned by the backend, allowing you to continue
+the same conversation.
+
+Type `exit` or `quit` to end the CLI session.
+
+Conversation history is stored in SQLite, so a saved conversation
+can be resumed by supplying its conversation ID after a server restart.
+
 ## Using the chat endpoint
 
 Send a `POST` request to `/chat`.
