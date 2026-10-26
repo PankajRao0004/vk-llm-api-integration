@@ -3,6 +3,13 @@ __pycache__/
 *.py[cod]
 .env
 .pytest_cache/
+# Local conversation databases and temporary SQLite files
+*.db
+*.sqlite
+*.sqlite3
+*-journal
+*-wal
+*-shm
 
 # .venv/	Contains our environment and installed packages, which can be recreated
 # __pycache__/	Contains Python-generated cache files
